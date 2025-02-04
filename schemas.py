@@ -13,6 +13,9 @@ class Product(_BaseProduct):
     created_at: _dt.datetime
     updated_at: _dt.datetime
 
+    class Config:
+        from_attributes = True 
+
 class CreateProduct(_BaseProduct):
     pass
 

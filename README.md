@@ -1,2 +1,5 @@
-# test-api
-just an example
+# FastAPI PostgreSQL API example
+
+## Развертывание проекта:
+
+### 1. Установка 
