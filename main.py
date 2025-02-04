@@ -39,7 +39,7 @@ async def get_product(
         raise _fa.HTTPException(status_code=404, detail="Продукт не найден")
 
 
-    if product_currency.upper() == "USD": # Если в запросе была указан доллар, то происходит конвертация
+    if product_currency.upper() == "USD": # Если в запросе был указан доллар, то происходит конвертация
         new_price = await _services.convert(price=product.price, currency="USD")
         product.price = new_price
 
